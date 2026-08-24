@@ -43,25 +43,61 @@
       <section class="hero" id="home">
         <div class="container">
           <div class="hero__wrapper">
-            <div class="hero__content">
-              <p class="hero__subtitle">MENING PORTFOLIOMGA XUSH KELIBSIZ</p>
-              <h1 class="hero__title">Salom, men <span>Johongir</span></h1>
-              <p class="hero__text">
-                Men web dasturlashni o‘rganmoqdaman va HTML hamda CSS yordamida
-                zamonaviy saytlar yaratmoqdaman.
-              </p>
-              <a class="hero__button" href="#about">Portfoliomni ko‘rish</a>
+            <div class="container">
+              <div class="hero__wrapper">
+                <div class="hero__content">
+                  <p class="hero__subtitle">
+                    MENING PORTFOLIOMGA XUSH KELIBSIZ
+                  </p>
+                  <h1 class="hero__title">Salom, men <span>Johongir</span></h1>
+                  <p class="hero__text">
+                    Men web dasturlashni o‘rganmoqdaman va HTML hamda CSS
+                    yordamida zamonaviy saytlar yaratmoqdaman.
+                  </p>
+                  <a class="hero__button" href="#about">Portfoliomni ko‘rish</a>
+                </div>
+
+                <div class="hero__visual">
+                  <div class="hero__frame">
+                    <img
+                      class="hero__img"
+                      src="./images/men.jfif"
+                      alt="Johongir"
+                    />
+                  </div>
+
+                  <span class="hero__badge hero__badge--html">HTML</span>
+                  <span class="hero__badge hero__badge--css">CSS</span>
+                  <span class="hero__badge hero__badge--web">WEB</span>
+                  <span class="hero__badge hero__badge--code">CODE</span>
+                </div>
+              </div>
             </div>
-            <img class="hero__img" src="" alt="" />
           </div>
         </div>
       </section>
+      <div class="tech__line">
+        <div class="tech__track">
+          <div class="tech__group">
+            <span>HTML</span><i>✦</i><span>CSS</span><i>✦</i
+            ><span>WEB DEVELOPMENT</span><i>✦</i><span>FRONTEND</span><i>✦</i
+            ><span>UI/UX</span><i>✦</i><span>CODE</span><i>✦</i><span>HTML</span
+            ><i>✦</i><span>CSS</span><i>✦</i>
+          </div>
+          <div class="tech__group">
+            <span>HTML</span><i>✦</i><span>CSS</span><i>✦</i
+            ><span>WEB DEVELOPMENT</span><i>✦</i><span>FRONTEND</span><i>✦</i
+            ><span>UI/UX</span><i>✦</i><span>CODE</span><i>✦</i><span>HTML</span
+            ><i>✦</i><span>CSS</span><i>✦</i>
+          </div>
+        </div>
+      </div>
       <section class="about" id="about">
         <div class="container">
           <div class="about__wrapper">
             <div class="about__content">
               <p class="section__subtitle">MEN HAQIMDA</p>
-              <h2 class="section__title">Men kimman?</h2>
+              <h2 class="about__title">Men — Johongir</h2>
               <p class="about__text">
                 Mening ismim Johongir. Men dasturlash, web dasturlash va
                 zamonaviy texnologiyalarga qiziqaman.
@@ -71,14 +107,214 @@
                 orqali o‘z ko‘nikmalarimni rivojlantirishni yoqtiraman.
               </p>
             </div>
+
+            <div class="about__cards">
+              <div class="about__card">
+                <span class="about__card-icon">🎓</span>
+                <div>
+                  <p class="about__card-label">MAKTAB</p>
+                  <h3 class="about__card-title">My School</h3>
+                  <p class="about__card-text">№151</p>
+                </div>
+              </div>
+
+              <div class="about__card">
+                <span class="about__card-icon">📍</span>
+                <div>
+                  <p class="about__card-text">Uzbekistan</p>
+                  <h3 class="about__card-title">Toshkent</h3>
+                  <p class="about__card-label">Avayhon 98/3</p>
+                </div>
+              </div>
+
+              <div class="about__card">
+                <span class="about__card-icon">💻</span>
+                <div>
+                  <p class="about__card-label">YO‘NALISH</p>
+                  <h3 class="about__card-title">Web Development</h3>
+                  <p class="about__card-text">HTML • CSS • Frontend</p>
+                </div>
+              </div>
+
+              <div class="about__card">
+                <span class="about__card-icon">🚀</span>
+                <div>
+                  <p class="about__card-label">MAQSAD</p>
+                  <h3 class="about__card-title">My Goal</h3>
+                  <p class="about__card-text">Professional Developer</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="family" id="family">
         <div class="container">
           <div class="family__wrapper">
-            <div class="family__cards">
-              <div class="family__card"></div>
+            <p class="section__subtitle">MY FAMILY</p>
+            <h2 class="section__title">My Family</h2>
+            <p class="family__text">
+              These are the people who are always close to me and support me.
+            </p>
+
+            <div class="family__carousel">
+              <input type="radio" name="family-slide" id="family-1" checked />
+              <input type="radio" name="family-slide" id="family-2" />
+              <input type="radio" name="family-slide" id="family-3" />
+              <input type="radio" name="family-slide" id="family-4" />
+              <input type="radio" name="family-slide" id="family-5" />
+
+              <div class="family__cards">
+                <div class="family__card family__card--grandfather">
+                  <div class="family__image">
+                    <img src="./images/doda.jfif" alt="Bobom" />
+                  </div>
+                  <div class="family__content">
+                    <span class="family__number">01</span>
+                    <h2>Bu mening bobom.</h2>
+                    <p>
+                      Bobom juda dono va mehribon inson. U menga doimo yaxshi
+                      maslahatlar beradi.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="family__card family__card--grandmother">
+                  <div class="family__image">
+                    <img src="./images/buvijon.jfif" alt="Buvim" />
+                  </div>
+                  <div class="family__content">
+                    <span class="family__number">02</span>
+                    <h2>Bu mening buvim.</h2>
+                    <p>
+                      Buvim juda mehribon va g'amxo'r inson. U oilamizga doimo
+                      mehr va quvonch olib keladi.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="family__card family__card--mother">
+                  <div class="family__image">
+                    <img src="./images/ona.jfif" alt="Onam" />
+                  </div>
+                  <div class="family__content">
+                    <span class="family__number">03</span>
+                    <h2>Bu mening onam.</h2>
+                    <p>
+                      Onam juda mehribon va g'amxo'r inson. U har doim meni
+                      qo'llab-quvvatlaydi va yordam beradi.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="family__card family__card--father">
+                  <div class="family__image">
+                    <img src="./images/ada.jfif" alt="Dadam" />
+                  </div>
+                  <div class="family__content">
+                    <span class="family__number">04</span>
+                    <h2>Bu mening dadam.</h2>
+                    <p>
+                      Dadam mehnatkash va kuchli inson. U doimo oilamiz haqida
+                      qayg'uradi va menga yordam beradi.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="family__card family__card--sister">
+                  <div class="family__image">
+                    <img src="./images/munira.jfif" alt="Singlim" />
+                  </div>
+                  <div class="family__content">
+                    <span class="family__number">05</span>
+                    <h2>Bu mening singlim.</h2>
+                    <p>
+                      Singlim quvnoq va mehribon. Biz birga vaqt o'tkazishni va
+                      suhbatlashishni yaxshi ko'ramiz.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="family__controls">
+                <label
+                  for="family-5"
+                  class="family__arrow family__prev family__prev--1"
+                >
+                  ←
+                </label>
+
+                <label
+                  for="family-2"
+                  class="family__arrow family__next family__next--1"
+                >
+                  →
+                </label>
+
+                <label
+                  for="family-1"
+                  class="family__arrow family__prev family__prev--2"
+                >
+                  ←
+                </label>
+
+                <label
+                  for="family-3"
+                  class="family__arrow family__next family__next--2"
+                >
+                  →
+                </label>
+
+                <label
+                  for="family-2"
+                  class="family__arrow family__prev family__prev--3"
+                >
+                  ←
+                </label>
+
+                <label
+                  for="family-4"
+                  class="family__arrow family__next family__next--3"
+                >
+                  →
+                </label>
+
+                <label
+                  for="family-3"
+                  class="family__arrow family__prev family__prev--4"
+                >
+                  ←
+                </label>
+
+                <label
+                  for="family-5"
+                  class="family__arrow family__next family__next--4"
+                >
+                  →
+                </label>
+
+                <label
+                  for="family-4"
+                  class="family__arrow family__prev family__prev--5"
+                >
+                  ←
+                </label>
+
+                <label
+                  for="family-1"
+                  class="family__arrow family__next family__next--5"
+                >
+                  →
+                </label>
+              </div>
+
+              <div class="family__dots">
+                <label for="family-1"></label>
+                <label for="family-2"></label>
+                <label for="family-3"></label>
+                <label for="family-4"></label>
+                <label for="family-5"></label>
+              </div>
             </div>
           </div>
         </div>
@@ -122,7 +358,17 @@
             <h1>Mening loyihalarim</h1>
             <div class="cards">
               <div class="test">
-                <a href="https://test-delta-plum-63.vercel.app/">Ko`rish</a>
+                <a
+                  class="loyiha__test"
+                  href="https://test-delta-plum-63.vercel.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="/Снимок экрана 2026-08-22 135846.png"
+                    alt="Project preview"
+                  />
+                  <span class="loyiha__test--span">Ko'rish</span>
+                </a>
               </div>
             </div>
           </div>
@@ -355,6 +601,7 @@
       <section class="contact" id="contact">
         <div class="container">
           <div class="contact__wrapper">
+            <h1 class="contact__title">Men bilan bog`lanish</h1>
             <div class="contact__form-box">
               <form class="contact__form">
                 <div class="contact__input-group">
