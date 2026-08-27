@@ -1182,12 +1182,10 @@ header {
 .team__cards {
   display: flex;
   width: 1300%;
-  animation: teamAuto 50s ease-in-out infinite;
+  transition: transform 0.65s cubic-bezier(0.65, 0, 0.35, 1);
   will-change: transform;
 }
-.team__carousel:hover .team__cards {
-  animation-play-state: paused;
-}
+
 .team__card {
   position: relative;
   flex: 0 0 7.692307%;
@@ -1323,11 +1321,174 @@ header {
   border-color: rgba(20, 157, 20, 0.5);
   background: rgba(20, 157, 20, 0.12);
 }
-.team__controls {
-  display: none !important;
+
+/* ===== TEAM: ONLY CLICK, NO AUTOPLAY ===== */
+#team-1:checked ~ .team__cards {
+  transform: translateX(0);
 }
+#team-2:checked ~ .team__cards {
+  transform: translateX(-7.692307%);
+}
+#team-3:checked ~ .team__cards {
+  transform: translateX(-15.384614%);
+}
+#team-4:checked ~ .team__cards {
+  transform: translateX(-23.076921%);
+}
+#team-5:checked ~ .team__cards {
+  transform: translateX(-30.769228%);
+}
+#team-6:checked ~ .team__cards {
+  transform: translateX(-38.461535%);
+}
+#team-7:checked ~ .team__cards {
+  transform: translateX(-46.153842%);
+}
+#team-8:checked ~ .team__cards {
+  transform: translateX(-53.846149%);
+}
+#team-9:checked ~ .team__cards {
+  transform: translateX(-61.538456%);
+}
+#team-10:checked ~ .team__cards {
+  transform: translateX(-69.230763%);
+}
+#team-11:checked ~ .team__cards {
+  transform: translateX(-76.92307%);
+}
+#team-12:checked ~ .team__cards {
+  transform: translateX(-84.615377%);
+}
+#team-13:checked ~ .team__cards {
+  transform: translateX(-92.307684%);
+}
+
+.team__controls {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+}
+
 .team__arrow {
-  display: none !important;
+  position: absolute;
+  top: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  border: 1px solid rgba(0, 255, 136, 0.55);
+  border-radius: 18px;
+  background: rgba(3, 12, 7, 0.9);
+  color: #00ff88;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow:
+    0 0 0 1px rgba(20, 157, 20, 0.08),
+    0 0 28px rgba(20, 157, 20, 0.18),
+    0 15px 35px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  transform: translateY(-50%);
+  cursor: pointer;
+  pointer-events: auto;
+  user-select: none;
+  transition: 0.35s ease;
+}
+
+.team__prev {
+  left: 18px;
+}
+.team__next {
+  right: 18px;
+}
+
+.team__arrow:hover {
+  color: #fff;
+  background: rgb(20, 157, 20);
+  border-color: #00ff88;
+  box-shadow:
+    0 0 35px rgba(20, 157, 20, 0.38),
+    0 18px 45px rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%) scale(1.08);
+}
+
+#team-1:checked ~ .team__controls .team__prev-1,
+#team-1:checked ~ .team__controls .team__next-1,
+#team-2:checked ~ .team__controls .team__prev-2,
+#team-2:checked ~ .team__controls .team__next-2,
+#team-3:checked ~ .team__controls .team__prev-3,
+#team-3:checked ~ .team__controls .team__next-3,
+#team-4:checked ~ .team__controls .team__prev-4,
+#team-4:checked ~ .team__controls .team__next-4,
+#team-5:checked ~ .team__controls .team__prev-5,
+#team-5:checked ~ .team__controls .team__next-5,
+#team-6:checked ~ .team__controls .team__prev-6,
+#team-6:checked ~ .team__controls .team__next-6,
+#team-7:checked ~ .team__controls .team__prev-7,
+#team-7:checked ~ .team__controls .team__next-7,
+#team-8:checked ~ .team__controls .team__prev-8,
+#team-8:checked ~ .team__controls .team__next-8,
+#team-9:checked ~ .team__controls .team__prev-9,
+#team-9:checked ~ .team__controls .team__next-9,
+#team-10:checked ~ .team__controls .team__prev-10,
+#team-10:checked ~ .team__controls .team__next-10,
+#team-11:checked ~ .team__controls .team__prev-11,
+#team-11:checked ~ .team__controls .team__next-11,
+#team-12:checked ~ .team__controls .team__prev-12,
+#team-12:checked ~ .team__controls .team__next-12,
+#team-13:checked ~ .team__controls .team__prev-13,
+#team-13:checked ~ .team__controls .team__next-13 {
+  display: flex;
+}
+
+.team__wrapper {
+  position: relative;
+}
+
+.team__wrapper::before {
+  content: "TEAM • 13";
+  position: absolute;
+  top: -35px;
+  right: 0;
+  padding: 9px 15px;
+  border: 1px solid rgba(0, 255, 136, 0.2);
+  border-radius: 999px;
+  background: rgba(0, 255, 136, 0.04);
+  color: rgba(0, 255, 136, 0.7);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.team__carousel::after {
+  content: "←  CLICK  →";
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  z-index: 18;
+  padding: 8px 14px;
+  border: 1px solid rgba(20, 157, 20, 0.18);
+  border-radius: 999px;
+  background: rgba(2, 9, 5, 0.72);
+  color: #78877d;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.team__carousel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 255, 136, 0.18);
+  border-radius: 30px;
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.5),
+    0 0 50px rgba(20, 157, 20, 0.07),
+    inset 0 0 40px rgba(20, 157, 20, 0.04);
 }
 
 .future__wrapper {
@@ -1803,60 +1964,6 @@ header {
     transform: rotate(0);
   }
 }
-@keyframes teamAuto {
-  0%,
-  5% {
-    transform: translateX(0);
-  }
-  8%,
-  13% {
-    transform: translateX(-7.692307%);
-  }
-  16%,
-  21% {
-    transform: translateX(-15.384614%);
-  }
-  24%,
-  29% {
-    transform: translateX(-23.076921%);
-  }
-  32%,
-  37% {
-    transform: translateX(-30.769228%);
-  }
-  40%,
-  45% {
-    transform: translateX(-38.461535%);
-  }
-  48%,
-  53% {
-    transform: translateX(-46.153842%);
-  }
-  56%,
-  61% {
-    transform: translateX(-53.846149%);
-  }
-  64%,
-  69% {
-    transform: translateX(-61.538456%);
-  }
-  72%,
-  77% {
-    transform: translateX(-69.230763%);
-  }
-  80%,
-  85% {
-    transform: translateX(-76.92307%);
-  }
-  88%,
-  93% {
-    transform: translateX(-84.615377%);
-  }
-  100% {
-    transform: translateX(-92.307684%);
-  }
-}
-
 @media (max-width: 1000px) {
   .hero__wrapper {
     gap: 50px;
@@ -2894,5 +3001,31 @@ header {
 @media (max-width: 480px) {
   .skills__card:nth-child(3) .skills__card-progress::before {
     font-size: 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team__arrow {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    font-size: 22px;
+  }
+
+  .team__prev {
+    left: 10px;
+  }
+  .team__next {
+    right: 10px;
+  }
+
+  .team__wrapper::before {
+    top: -28px;
+    font-size: 9px;
+  }
+
+  .team__carousel::after {
+    bottom: 14px;
+    font-size: 8px;
   }
 }
