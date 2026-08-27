@@ -1181,8 +1181,8 @@ header {
 }
 .team__cards {
   display: flex;
-  width: 1100%;
-  animation: teamAuto 42s ease-in-out infinite alternate;
+  width: 1300%;
+  animation: teamAuto 50s ease-in-out infinite;
   will-change: transform;
 }
 .team__carousel:hover .team__cards {
@@ -1190,7 +1190,7 @@ header {
 }
 .team__card {
   position: relative;
-  flex: 0 0 9.090909%;
+  flex: 0 0 7.692307%;
   min-height: 480px;
   padding: 35px;
   overflow: hidden;
@@ -1805,47 +1805,55 @@ header {
 }
 @keyframes teamAuto {
   0%,
-  4% {
+  5% {
     transform: translateX(0);
   }
-  10%,
-  14% {
-    transform: translateX(-9.090909%);
+  8%,
+  13% {
+    transform: translateX(-7.692307%);
   }
-  20%,
-  24% {
-    transform: translateX(-18.181818%);
+  16%,
+  21% {
+    transform: translateX(-15.384614%);
   }
-  30%,
-  34% {
-    transform: translateX(-27.272727%);
+  24%,
+  29% {
+    transform: translateX(-23.076921%);
+  }
+  32%,
+  37% {
+    transform: translateX(-30.769228%);
   }
   40%,
-  44% {
-    transform: translateX(-36.363636%);
+  45% {
+    transform: translateX(-38.461535%);
   }
-  50%,
-  54% {
-    transform: translateX(-45.454545%);
+  48%,
+  53% {
+    transform: translateX(-46.153842%);
   }
-  60%,
-  64% {
-    transform: translateX(-54.545455%);
+  56%,
+  61% {
+    transform: translateX(-53.846149%);
   }
-  70%,
-  74% {
-    transform: translateX(-63.636364%);
+  64%,
+  69% {
+    transform: translateX(-61.538456%);
+  }
+  72%,
+  77% {
+    transform: translateX(-69.230763%);
   }
   80%,
-  84% {
-    transform: translateX(-72.727273%);
+  85% {
+    transform: translateX(-76.92307%);
   }
-  90%,
-  94% {
-    transform: translateX(-81.818182%);
+  88%,
+  93% {
+    transform: translateX(-84.615377%);
   }
   100% {
-    transform: translateX(-90.909091%);
+    transform: translateX(-92.307684%);
   }
 }
 
