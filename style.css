@@ -7,8 +7,11 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
   overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
@@ -258,9 +261,6 @@ header {
 .section__subtitle {
   margin-bottom: 18px;
   color: rgb(20, 157, 20);
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 4px;
 }
 .hero__title {
   margin-bottom: 25px;
@@ -3029,4 +3029,11 @@ header {
     bottom: 14px;
     font-size: 8px;
   }
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
