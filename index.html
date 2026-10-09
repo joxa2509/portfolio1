@@ -112,18 +112,23 @@
       <section class="about" id="about">
         <div class="container">
           <div class="about__wrapper">
-            <div class="about__content">
-              <p class="section__subtitle">MEN HAQIMDA</p>
-              <!-- <h2 class="about__title">Men — Johongir</h2> -->
+            <details class="about__details">
+              <summary class="section__subtitle">MEN HAQIMDA</summary>
+
               <p class="about__text">
                 Mening ismim Johongir. Men dasturlash, web dasturlash va
                 zamonaviy texnologiyalarga qiziqaman.
               </p>
-              <p class="about__text">
-                Men saytlar yaratishni, yangi narsalarni o‘rganishni va amaliyot
-                orqali o‘z ko‘nikmalarimni rivojlantirishni yoqtiraman.
-              </p>
-            </div>
+
+              <details class="about__more">
+                <summary>Ko‘proq o‘qish</summary>
+                <p class="about__text">
+                  Men saytlar yaratishni, yangi narsalarni o‘rganishni va
+                  amaliyot orqali o‘z ko‘nikmalarimni rivojlantirishni
+                  yoqtiraman.
+                </p>
+              </details>
+            </details>
 
             <div class="about__cards">
               <div class="about__card">
@@ -462,7 +467,7 @@
             <p class="section__subtitle">MENING JAMOAM</p>
 
             <div class="team__carousel">
-              <!-- 10 SLIDES -->
+              <!-- 9 SLIDES -->
               <input type="radio" name="team-slide" id="team-1" checked />
               <input type="radio" name="team-slide" id="team-2" />
               <input type="radio" name="team-slide" id="team-3" />
@@ -472,7 +477,6 @@
               <input type="radio" name="team-slide" id="team-7" />
               <input type="radio" name="team-slide" id="team-8" />
               <input type="radio" name="team-slide" id="team-9" />
-              <input type="radio" name="team-slide" id="team-10" />
 
               <div class="team__cards">
                 <div class="team__card">
@@ -522,15 +526,6 @@
 
                 <div class="team__card">
                   <div class="team__image">
-                    <img src="./images/Davlatbek.jfif" alt="Davlatbek" />
-                  </div>
-                  <div class="team__content">
-                    <h3 class="team__name">Davlatbek</h3>
-                  </div>
-                </div>
-
-                <div class="team__card">
-                  <div class="team__image">
                     <img src="./images/Karimbek.jfif" alt="Karimbek" />
                   </div>
                   <div class="team__content">
@@ -566,9 +561,7 @@
                 </div>
               </div>
 
-              <!-- ARROWS -->
               <div class="team__controls">
-                <!-- 1 -->
                 <label for="team-10" class="team__arrow team__prev team__prev-1"
                   >←</label
                 >
@@ -577,7 +570,6 @@
                   >→</label
                 >
 
-                <!-- 2 -->
                 <label for="team-1" class="team__arrow team__prev team__prev-2"
                   >←</label
                 >
@@ -586,7 +578,6 @@
                   >→</label
                 >
 
-                <!-- 3 -->
                 <label for="team-2" class="team__arrow team__prev team__prev-3"
                   >←</label
                 >
@@ -595,7 +586,6 @@
                   >→</label
                 >
 
-                <!-- 4 -->
                 <label for="team-3" class="team__arrow team__prev team__prev-4"
                   >←</label
                 >
@@ -604,7 +594,6 @@
                   >→</label
                 >
 
-                <!-- 5 -->
                 <label for="team-4" class="team__arrow team__prev team__prev-5"
                   >←</label
                 >
@@ -613,7 +602,6 @@
                   >→</label
                 >
 
-                <!-- 6 -->
                 <label for="team-5" class="team__arrow team__prev team__prev-6"
                   >←</label
                 >
@@ -622,7 +610,6 @@
                   >→</label
                 >
 
-                <!-- 7 -->
                 <label for="team-6" class="team__arrow team__prev team__prev-7"
                   >←</label
                 >
@@ -631,7 +618,6 @@
                   >→</label
                 >
 
-                <!-- 8 -->
                 <label for="team-7" class="team__arrow team__prev team__prev-8"
                   >←</label
                 >
@@ -640,7 +626,6 @@
                   >→</label
                 >
 
-                <!-- 9 -->
                 <label for="team-8" class="team__arrow team__prev team__prev-9"
                   >←</label
                 >
@@ -649,13 +634,6 @@
                   >→</label
                 >
 
-                <!-- 10 -->
-                <label for="team-9" class="team__arrow team__prev team__prev-10"
-                  >←</label
-                >
-
-                <label for="team-1" class="team__arrow team__next team__next-10"
-                  >→</label
                 >
               </div>
             </div>

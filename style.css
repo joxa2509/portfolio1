@@ -1182,14 +1182,14 @@ header {
 }
 .team__cards {
   display: flex;
-  width: 1300%;
+  width: 900%;
   transition: transform 0.65s cubic-bezier(0.65, 0, 0.35, 1);
   will-change: transform;
 }
 
 .team__card {
   position: relative;
-  flex: 0 0 7.692307%;
+  flex: 0 0 11.111111%;
   min-height: 480px;
   padding: 35px;
   overflow: hidden;
@@ -1328,40 +1328,28 @@ header {
   transform: translateX(0);
 }
 #team-2:checked ~ .team__cards {
-  transform: translateX(-7.692307%);
+  transform: translateX(-11.111111%);
 }
 #team-3:checked ~ .team__cards {
-  transform: translateX(-15.384614%);
+  transform: translateX(-22.222222%);
 }
 #team-4:checked ~ .team__cards {
-  transform: translateX(-23.076921%);
+  transform: translateX(-33.333333%);
 }
 #team-5:checked ~ .team__cards {
-  transform: translateX(-30.769228%);
+  transform: translateX(-44.444444%);
 }
 #team-6:checked ~ .team__cards {
-  transform: translateX(-38.461535%);
+  transform: translateX(-55.555555%);
 }
 #team-7:checked ~ .team__cards {
-  transform: translateX(-46.153842%);
+  transform: translateX(-66.666666%);
 }
 #team-8:checked ~ .team__cards {
-  transform: translateX(-53.846149%);
+  transform: translateX(-77.777777%);
 }
 #team-9:checked ~ .team__cards {
-  transform: translateX(-61.538456%);
-}
-#team-10:checked ~ .team__cards {
-  transform: translateX(-69.230763%);
-}
-#team-11:checked ~ .team__cards {
-  transform: translateX(-76.92307%);
-}
-#team-12:checked ~ .team__cards {
-  transform: translateX(-84.615377%);
-}
-#team-13:checked ~ .team__cards {
-  transform: translateX(-92.307684%);
+  transform: translateX(-88.888888%);
 }
 
 .team__controls {
@@ -1433,12 +1421,6 @@ header {
 #team-8:checked ~ .team__controls .team__next-8,
 #team-9:checked ~ .team__controls .team__prev-9,
 #team-9:checked ~ .team__controls .team__next-9,
-#team-10:checked ~ .team__controls .team__prev-10,
-#team-10:checked ~ .team__controls .team__next-10,
-#team-11:checked ~ .team__controls .team__prev-11,
-#team-11:checked ~ .team__controls .team__next-11,
-#team-12:checked ~ .team__controls .team__prev-12,
-#team-12:checked ~ .team__controls .team__next-12,
 #team-13:checked ~ .team__controls .team__prev-13,
 #team-13:checked ~ .team__controls .team__next-13 {
   display: flex;
@@ -1449,7 +1431,7 @@ header {
 }
 
 .team__wrapper::before {
-  content: "TEAM • 13";
+  content: "TEAM • 9";
   position: absolute;
   top: -35px;
   right: 0;
@@ -3036,4 +3018,61 @@ body {
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+}
+.about__more {
+  margin-top: 15px;
+}
+
+.about__more summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border: 1px solid #00ff88;
+  border-radius: 10px;
+  background: rgba(0, 255, 136, 0.08);
+  color: #00ff88;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  transition: 0.3s ease;
+}
+
+.about__more summary::-webkit-details-marker {
+  display: none;
+}
+
+.about__more summary::after {
+  content: "+";
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.about__more[open] summary::after {
+  content: "−";
+}
+
+.about__more summary:hover {
+  background: #00ff88;
+  color: #000;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.25);
+  transform: translateY(-2px);
+}
+
+.about__more .about__text {
+  margin-top: 15px;
+  animation: aboutMoreShow 0.35s ease;
+}
+
+@keyframes aboutMoreShow {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
