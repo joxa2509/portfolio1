@@ -3076,3 +3076,86 @@ body {
     transform: translateY(0);
   }
 }
+.team__cards {
+  display: flex;
+  width: 1100%;
+  transition: transform 0.65s cubic-bezier(0.65, 0, 0.35, 1);
+  will-change: transform;
+}
+
+.team__card {
+  flex: 0 0 9.090909%;
+}
+
+#team-1:checked ~ .team__cards {
+  transform: translateX(0);
+}
+
+#team-2:checked ~ .team__cards {
+  transform: translateX(-9.090909%);
+}
+
+#team-3:checked ~ .team__cards {
+  transform: translateX(-18.181818%);
+}
+
+#team-4:checked ~ .team__cards {
+  transform: translateX(-27.272727%);
+}
+
+#team-5:checked ~ .team__cards {
+  transform: translateX(-36.363636%);
+}
+
+#team-6:checked ~ .team__cards {
+  transform: translateX(-45.454545%);
+}
+
+#team-7:checked ~ .team__cards {
+  transform: translateX(-54.545455%);
+}
+
+#team-8:checked ~ .team__cards {
+  transform: translateX(-63.636364%);
+}
+
+#team-9:checked ~ .team__cards {
+  transform: translateX(-72.727273%);
+}
+
+#team-10:checked ~ .team__cards {
+  transform: translateX(-81.818182%);
+}
+
+#team-11:checked ~ .team__cards {
+  transform: translateX(-90.909091%);
+}
+
+#team-1:checked ~ .team__controls .team__prev-1,
+#team-1:checked ~ .team__controls .team__next-1,
+#team-2:checked ~ .team__controls .team__prev-2,
+#team-2:checked ~ .team__controls .team__next-2,
+#team-3:checked ~ .team__controls .team__prev-3,
+#team-3:checked ~ .team__controls .team__next-3,
+#team-4:checked ~ .team__controls .team__prev-4,
+#team-4:checked ~ .team__controls .team__next-4,
+#team-5:checked ~ .team__controls .team__prev-5,
+#team-5:checked ~ .team__controls .team__next-5,
+#team-6:checked ~ .team__controls .team__prev-6,
+#team-6:checked ~ .team__controls .team__next-6,
+#team-7:checked ~ .team__controls .team__prev-7,
+#team-7:checked ~ .team__controls .team__next-7,
+#team-8:checked ~ .team__controls .team__prev-8,
+#team-8:checked ~ .team__controls .team__next-8,
+#team-9:checked ~ .team__controls .team__prev-9,
+#team-9:checked ~ .team__controls .team__next-9,
+#team-10:checked ~ .team__controls .team__prev-10,
+#team-10:checked ~ .team__controls .team__next-10,
+#team-11:checked ~ .team__controls .team__prev-11,
+#team-11:checked ~ .team__controls .team__next-11 {
+  display: flex;
+}
+
+.team__wrapper::before {
+  content: "TEAM • 11";
+}
