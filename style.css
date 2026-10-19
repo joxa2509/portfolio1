@@ -1446,7 +1446,6 @@ header {
 }
 
 .team__carousel::after {
-  content: "←  CLICK  →";
   position: absolute;
   left: 50%;
   bottom: 20px;
