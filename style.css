@@ -1153,7 +1153,6 @@ header {
   transition: 0.35s ease;
 }
 .project__button:hover {
-  background: rgb(20, 157, 20);
   border-color: rgb(20, 157, 20);
   box-shadow: 0 10px 30px rgba(20, 157, 20, 0.22);
 }
