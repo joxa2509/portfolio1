@@ -1430,7 +1430,7 @@ header {
 }
 
 .team__wrapper::before {
-  content: "TEAM • 9";
+  content: "";
   position: absolute;
   top: -35px;
   right: 0;
@@ -3155,5 +3155,5 @@ body {
 }
 
 .team__wrapper::before {
-  content: "TEAM • 11";
+  content: " ";
 }
